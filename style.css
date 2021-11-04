@@ -1,0 +1,49 @@
+.balls {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: blue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    animation-name: loading;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+#ball1{
+    animation-delay: 1s;
+}
+#ball2{
+    animation-delay: 1.2s;
+}
+#ball3{
+    animation-delay: 1.4s;
+}
+#ball4{
+    animation-delay: 1.6s;
+}
+
+
+@keyframes loading{
+0%{
+    transform:rotate(0deg)
+              translate(-100px)
+              rotate(0deg);
+    background-color:purple;
+  
+  }
+  50%{
+      background-color: blue;
+  }
+  100%{
+    transform:rotate(360deg)
+              translate(-100px)
+              rotate(-360deg);
+    background-color:rgb(97, 49, 136);
+  }
+}
+
+body{
+    background-color: orange;
+}
